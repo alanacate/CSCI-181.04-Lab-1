@@ -1,4 +1,4 @@
-package choachuy.lab.lab1;
+package choachuy.labs.lab1;
 
 import android.content.Context;
 

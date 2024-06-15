@@ -1,4 +1,4 @@
-package choachuy.lab.lab1;
+package choachuy.labs.lab1;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
     public void incorrect(){
-        Toast toast = Toast.makeText(this, "Incorrect Credentials", Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(this, "Invalid Credentials", Toast.LENGTH_LONG);
         toast.show();
     }
     public void goToLogin(){

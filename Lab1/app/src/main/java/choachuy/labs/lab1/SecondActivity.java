@@ -1,4 +1,4 @@
-package choachuy.lab.lab1;
+package choachuy.labs.lab1;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -47,7 +47,9 @@ public class SecondActivity extends AppCompatActivity {
                 String username = userText.getText().toString();
                 String password = passText.getText().toString();
                 String confirmPass = confirmPassText.getText().toString();
-                if ((username == null || username.isEmpty()) || (password == null || password.isEmpty()) || (confirmPass == null || confirmPass.isEmpty())) {
+                if (username == null || username.isEmpty()) {
+                    nameBlank();
+                } else if ((username == null || username.isEmpty()) || (password == null || password.isEmpty()) || (confirmPass == null || confirmPass.isEmpty())) {
                     blank();
                 } else if (!(password == null || password.isEmpty()) && !password.equals(confirmPass)) {
                     mismatch();
@@ -84,6 +86,10 @@ public class SecondActivity extends AppCompatActivity {
     }
     public void blank(){
         Toast toast = Toast.makeText(this, "Item/s cannot be blank", Toast.LENGTH_LONG);
+        toast.show();
+    }
+    public void nameBlank(){
+        Toast toast = Toast.makeText(this, "Name must not be blank", Toast.LENGTH_LONG);
         toast.show();
     }
     public void mismatch(){

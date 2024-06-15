@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'choachuy.lab.lab1'
+    namespace 'choachuy.labs.lab1'
     compileSdk 34
 
     defaultConfig {
-        applicationId "choachuy.lab.lab1"
+        applicationId "choachuy.labs.lab1"
         minSdk 24
         targetSdk 34
         versionCode 1
